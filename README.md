@@ -33,6 +33,8 @@ using SimpleCS.Entity.Config;
 ```
 ## ServerHandler
 ```cs
+using SimpleCS.Entity;
+
 public class YourSuperCoolServerHandlerClass : ServerHandler
 {
   public override string ProcessRequest(string Data)
