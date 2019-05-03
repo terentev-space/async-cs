@@ -28,7 +28,7 @@ namespace SimpleCS
                 Data = new byte[this.Config.Package];
 
                 int BytesRead = Stream.Read(Data, 0, Data.Length);
-                string Response = StringHelper.BytesToString(Data);
+                string Response = StringHelper.BytesToString(Data, 0, BytesRead);
 
                 Stream.Close();
                 Client.Close();
